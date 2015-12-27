@@ -1,0 +1,119 @@
+﻿*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+body {
+    background-color: #e9e9e9;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: monospace;
+    font-size: 14px;
+    overflow-x: hidden;
+}
+a{
+    font-family: "Times New Roman", serif;
+    color: #406acf;
+    text-decoration: none;
+}
+    a:active{
+        text-decoration: underline;
+    }
+.titleText{
+    font-family: "Lucida Console", monospace;
+    font-size: larger;
+    color: #000000;
+    margin-bottom: 4px;
+    margin-top: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+    .titleText:active{
+        color: #171717;
+        border-bottom: 1px solid #000000;
+    }
+.content {}
+.front {}
+.back {}
+.delDiv {}
+.card{
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px solid #171717;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    width: 100%;
+}
+    .card:active{
+        border: 2px solid #406acf;
+    }
+    .card .content{
+        border-bottom: 1px solid #000000;
+        border-top: 1px solid #000000;
+        padding: 10px;
+        width: 100%;
+        height: 12vh;
+        min-height: 12vh;
+        user-select: text;
+        -moz-user-select: text;
+        -webkit-user-select: text;
+    }
+    .card .delDiv{
+        /*This defines parameters for the deletion section*/
+        height: 15px;
+        background-color: rgba(200, 0, 0, 0.2);
+        margin-top: 2px;
+    }
+        .card .delDiv:active{
+            background-color: #ff0909;
+        }
+    .card .content::before{
+        /*This defines parameters for the title section*/
+        height: 10%;
+    }
+    .card:after{
+        content: "\a";
+    }
+#main{
+    margin-top: 12vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    display: table;
+    overflow-y: scroll;
+}
+#toolbar{
+    padding: 10px;
+    padding-top: 3vh;
+    width: 100%;
+    background-color: #406acf;
+    color: #e9e9e9;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    min-height: 10vh;
+    display: table-row;
+}
+    #toolbar select{
+        width: 48%;
+        background-color: #406acf;
+        color: #e9e9e9;
+        border: 1px solid #e9e9e9;
+        padding: 3px;
+        font-family: monospace;
+    }
+    #toolbar div{
+        float: right;
+    }
+    #toolbar button{
+        padding: 5px;
+        font-family: monospace;
+        background-color: #e9e9e9;
+        color: #000000;
+    }

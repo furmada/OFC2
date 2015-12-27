@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no" />
+
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <title>OFC2: Add Card</title>
+
+    <!-- OFC2 references -->
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/add_card.css" rel="stylesheet" />
+</head>
+<body>
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/jquery-2.1.4.min.js"></script>
+    <script src="scripts/jquery.longpress.js"></script>
+    <script src="scripts/add_card.js"></script>
+
+    <div id="toolbar">
+        <p class="titleText">Add New Card</p>
+        <div>
+            <button id="save_card">Save</button>
+            <button id="cancel_creation">Cancel</button>
+        </div>
+    </div>
+    <div id="main">
+        <p class="titleText">Create a new card</p>
+        <br />
+        <p>Card Title:</p>
+        <input id="title" type="text" />
+        <br />
+        <p>Card Front:</p>
+        <textarea id="front"></textarea>
+        <br />
+        <p>Card Back:</p>
+        <textarea id="back"></textarea>
+    </div>
+</body>
+</html>

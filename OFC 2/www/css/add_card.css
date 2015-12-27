@@ -1,0 +1,19 @@
+﻿input, textarea{
+    width: 100%;
+    font-family: monospace;
+    background-color: #e9e9e9;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #000000;
+    font-family: monospace;
+}
+#main{
+    padding-right: 20px !important;
+}
+#front, #back{
+    height: 20vh;
+}
+#toolbar .titleText{
+    width: 48%;
+    float: left;
+}
